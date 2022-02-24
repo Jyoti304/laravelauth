@@ -28,7 +28,7 @@ Route::group(['middleware' => ['auth','role:user']],function(){
 Route::get('/dashboard/myprofile','App\Http\Controllers\DashboardController@myprofile')->name('dashboard.myprofile');
 });
 
-// For Employee
+// For Emplo1ee1
 Route::group(['middleware' => ['auth','role:employee']],function(){
 Route::get('/dashboard/empcreate','App\Http\Controllers\DashboardController@empcreate')->name('dashboard.empcreate');
 });
